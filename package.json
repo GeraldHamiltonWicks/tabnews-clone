@@ -1,0 +1,19 @@
+{
+  "name": "tabnews-clone",
+  "version": "1.0.0",
+  "description": "This is a repository that contains a clone of the [TabNews](https://www.tabnews.com.br/) website, developed during the curso.dev course.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
