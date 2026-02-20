@@ -23,7 +23,7 @@ const Home = () => {
 
     const timeoutRef = useRef(null);
 
-    const GAP = 200;
+    const GAP = 220;
 
     useEffect(() => {
 
