@@ -1,0 +1,5 @@
+root = true
+
+[*]
+ident_style = space #For every indentation, use the space character
+ident_size = 2 #Size of identation    
