@@ -1,5 +1,5 @@
 root = true
 
-[*]
+[*.js]
 indent_style = space #For every indentation, use the space character
 indent_size = 2 #Size of identation    
