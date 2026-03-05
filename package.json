@@ -7,9 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write ."
+    "lint:fix": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "jest": "^29.6.2",
     "prettier": "^3.8.1"
   }
 }

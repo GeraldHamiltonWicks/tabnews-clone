@@ -3,3 +3,7 @@ const Home = () => {
 };
 
 export default Home;
+
+const getSum = (a, b) => {
+  return a + b;
+};
