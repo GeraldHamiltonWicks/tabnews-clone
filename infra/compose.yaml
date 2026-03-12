@@ -1,0 +1,16 @@
+# Init docker by running:
+# docker compose -f infra/compose.yaml up -d
+#
+# Finish docker, by running
+# docker compose -f infra/compose.yaml down
+#
+# Init psql by running:
+# psql --host=localhost --username=postgres --port=5432
+services:
+  database:
+    image: "postgres:16.0-alpine3.18"
+    environment:
+      POSTGRES_PASSWORD: "zqFcRjyQBvTbNCtn"
+      POSTGRES_USER: "postgres"
+    ports:
+      - "5432:5432" # host:container
