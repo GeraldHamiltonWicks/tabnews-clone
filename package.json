@@ -4,7 +4,10 @@
   "description": "This is a repository that contains a clone of the [TabNews](https://www.tabnews.com.br/) website, developed during the curso.dev course.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "build": "next build",
     "export": "next build && next export",
     "lint:check": "prettier --check .",
