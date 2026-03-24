@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    // That means the root of this project is the actual path from jsconfig.json
+    "baseUrl": "."
+  }
+}
