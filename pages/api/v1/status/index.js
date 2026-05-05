@@ -1,8 +1,13 @@
 import database from "infra/database.js";
 
 export default async function status(request, response) {
-  const result = await database.query("SELECT 1 + 1 as sum;");
-  console.log(result.rows);
-  console.log("[test] database: ", database);
-  response.status(200).send({ chave: "valor" });
+  const updatedAt = new Date().toISOString();
+
+  response.status(200).send({
+    updated_at: updatedAt,
+    // TODO: implement those entries and also add the unit tests for it
+    postgres_version: null,
+    max_db_connections: 0,
+    db_connections_used: 0,
+  });
 }
