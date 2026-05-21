@@ -1,5 +1,7 @@
 import { Client } from "pg";
 
+// Todo: Checar informaçãoes que podem estar sendo vazadar
+// ler documentação do node-postgres
 async function query(queryObject) {
   const client = new Client({
     host: process.env.POSTGRES_HOST,
