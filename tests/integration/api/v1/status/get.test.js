@@ -37,9 +37,10 @@ test("GET to /api/v1/status should return db_connections_used", async () => {
 
   const responseBody = await response.json();
   const max_db_connections = responseBody.dependencies.database.max_connections;
+  const opened_connections =
+    responseBody.dependencies.database.opened_connections;
 
-  expect(responseBody.db_connections_used).toBeDefined();
-  expect(Number(responseBody.db_connections_used)).toBeLessThanOrEqual(
-    Number(max_db_connections),
-  );
+  expect(opened_connections).toBeDefined();
+  expect(opened_connections).toBeLessThanOrEqual(max_db_connections);
+  expect(opened_connections).toBe(1);
 });
